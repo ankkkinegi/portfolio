@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+.point {
+    cursor: pointer;
+}
+
+ngx-spinner {
+    z-index: 9999;
+    /* Ensure it's above other content */
+}
+
+/* Global Font Settings */
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Responsive Font Sizes Using clamp() */
+
+p {
+    font-size: clamp(1rem, 1.5vw + 1rem, 1.1rem);
+    line-height: 1.6;
+}
+
+.smallHeading {
+    font-size: clamp(1rem, 1.5vw + 1rem, 1.4rem);
+}
+
+.smallHeading2 {
+    font-size: clamp(1rem, 1.5vw + 1rem, 1.2rem);
+}
+
+body {
+    font-size: clamp(1rem, 1vw + 1rem, 1.25rem);
+}
+
+/* Additional Media Queries for Fine-Tuning */
+@media (min-width: 600px) {
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 1.5rem;
+    }
+}
+
+.heading {
+    font-size: clamp(2.5rem, 4vw + 1rem, 2rem);
+    /* Adjusted to be responsive */
+    color: #464679;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.heading span {
+    margin-top: 5px;
+    font-size: clamp(1rem, 3.5vw + 1rem, 1rem);
+    color: #464679;
+    word-spacing: 1px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.heading span:after,
+.heading span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color: #f8f8f8;
+}
+
+@media (max-width: 434px) {
+    .heading span {
+        display: flow-root;
+    }
+}
+
+#scrollStyle::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+#scrollStyle::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#scrollStyle::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}

@@ -1,0 +1,310 @@
+<!-- fixed scroll top arrow -->
+<div class="outer-circle point" [ngClass]="{ 'show': showButton }" (click)="scrollToTop()">
+    <div class="inner-circle point"><i class="fa-solid fa-angle-up martop point"></i></div>
+</div>
+
+<section id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 col-md-6">
+                <div class="">
+                    <div class="hi animate__animated animate__fadeInUp">Hi, my</div>
+                    <div class="name animate__animated animate__fadeInUp">
+                        name is Ankit.
+                    </div>
+
+                    <div class="description animate__animated animate__fadeInUp animate__delay">I'm an <b
+                            class="designation">Angular
+                            developer</b> who specializes in building
+                        dynamic
+                        and interactive web applications.
+                    </div>
+                    <div class="scroll animate__animated animate__fadeIn animate__delay1">
+                        <span class="point" (click)="scrollToElement();">SCROLL</span>
+                    </div>
+                    <!-- scroll down arrow -->
+                    <div class="animate__animated animate__bounceInDown animate__delay2">
+                        <div class="c-scroll-icon point" (click)="scrollToElement();">
+                            <div class="c-scroll-icon-line-mask">
+                                <div class="c-scroll-icon-line"></div>
+                            </div>
+                            <div class="c-scroll-icon-triangle">
+                                <div class="c-scroll-icon-triangle-mask first">
+                                    <div class="c-scroll-icon-triangle-line first"></div>
+                                </div>
+                                <div class="c-scroll-icon-triangle-mask right">
+                                    <div class="c-scroll-icon-triangle-line right"></div>
+                                </div>
+                                <div class="c-scroll-icon-triangle-mask left">
+                                    <div class="c-scroll-icon-triangle-line left"></div>
+                                </div>
+                                <div class="c-scroll-icon-triangle-mask last">
+                                    <div class="c-scroll-icon-triangle-line last"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-md-6">
+                <div class="sketch">
+                    <img class="animate__animated animate__delay1 animate__bounceInUp" src="assets/images/ankit.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="about">
+    <div class="about-me">
+        <div class="container mt-3">
+            <div data-aos="fade-up" class="heading my-4">About me<span>Brief overview of my professional path</span>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img data-aos="zoom-out-right" style="top: 52px!important;" src="assets/images/about.png" alt=""
+                        class="aboutMeImg">
+                </div>
+                <div class="col-6">
+                    <p data-aos="zoom-out-left">
+                        I have completed a Bachelor of Computer Applications (BCA) from Panjab University in India.
+                        After
+                        that,
+                        I
+                        worked
+                        as an Angular developer for two years, honing my skills in building dynamic and interactive
+                        web
+                        applications.
+                        Driven by my interest in cybersecurity and a desire to safeguard websites, I pursued a
+                        Master of
+                        Science
+                        (MSc)
+                        in Cyber Security from the University of the West of England in the United Kingdom.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section> -->
+
+<section id="about">
+    <div data-aos="fade-up" class="heading my-4">About me<span>Brief overview of my professional path</span>
+    </div>
+    <div id="about-section" class="about-section">
+        <div class="wrapper">
+            <div class="hero">
+                <p class="hero__heading">
+                    I have completed a Bachelor of Computer Applications (BCA) from Panjab University in India.After
+                    that, I
+                    worked
+                    as an Angular developer for two years, honing my skills in building dynamic and interactive web
+                    applications. Driven by my interest in cybersecurity and a desire to safeguard websites, I pursued a
+                    Master of Science (MSc) in Cyber Security from the University of the West of England in the United
+                    Kingdom.
+                </p>
+            </div>
+
+            <div class="hero hero--secondary" aria-hidden="true" data-hero>
+                <p class="hero__heading"> I have completed a Bachelor of Computer Applications (BCA) from Panjab
+                    University
+                    in India.After that, I
+                    worked
+                    as an Angular developer for two years, honing my skills in building dynamic and interactive web
+                    applications. Driven by my interest in cybersecurity and a desire to safeguard websites, I pursued a
+                    Master of Science (MSc) in Cyber Security from the University of the West of England in the United
+                    Kingdom.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="experience" class="mt-3">
+    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="heading mb-4">Experience<span>Driving
+            results with proven excellence</span></div>
+    <div class="experience-container">
+        <div class="experience-item">
+            <div class="experience-content">
+                <h2>Infowiz</h2>
+                <span>Angular Internship 6 months</span>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-content">
+                <h2>XPERGE</h2>
+                <span>Front End Developer 1 year</span>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-content">
+                <h2>Devherds</h2>
+                <span>Angular Developer 1 year</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="qualifi">
+    <div data-aos="zoom-in" class="heading mt-5">Qualification<span>Expertly qualified, exceptionally capable</span>
+    </div>
+
+    <div id="carousel-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+        <input hidden type="radio" name="carousel-control" id="carousel-button-a" checked />
+        <input hidden type="radio" name="carousel-control" id="carousel-button-b" />
+
+        <div id="carousel-slider">
+            <div class="carousel-wrapper">
+
+                <section class="carousel-panel-a" id="scrollStyle">
+                    <img src="assets/images/UWE.svg" class="card-img-top1 img-responsive"
+                        alt="University of the West of England Logo">
+                    <div class="smallHeading">Master of Science in Cyber Security</div>
+                    <div class="smallHeading2 mb-2 text-muted">University of the West of England
+                    </div>
+                    <p class="card-text">
+                        <strong>Location:</strong> Bristol, United Kingdom<br>
+                        <strong>Duration:</strong> January 2024 - January 2025<br>
+                    </p>
+                    <p>Recently completed advanced degree in Cyber Security, focusing on cutting-edge
+                        techniques
+                        and methodologies to address contemporary cyber threats. This program includes intensive
+                        coursework and practical projects in areas such as threat analysis, security management,
+                        and
+                        incident response, aimed at enhancing skills to protect digital assets and secure online
+                        environments.</p>
+                </section>
+
+                <section class="carousel-panel-b" id="scrollStyle">
+                    <img src="https://www.cdnlogo.com/logos/p/41/panjab-university.svg"
+                        class="card-img-top2 img-responsive" alt="Panjab University Logo">
+                    <div class="smallHeading">Bachelor of Computer Applications</div>
+                    <div class="smallHeading2 mb-2 text-muted">Panjab University</div>
+                    <p class="card-text">
+                        <strong>Location:</strong> India<br>
+                        <strong>Duration:</strong> July 2018 - July 2021<br>
+                    </p>
+                    <p>Completed a comprehensive undergraduate program in Computer Applications with a strong
+                        foundation in core computer science principles. The curriculum included software
+                        development,
+                        data structures, algorithms, and systems analysis. Engaged in practical projects and
+                        internships, applying theoretical knowledge to real-world scenarios and enhancing
+                        technical
+                        skills.</p>
+                </section>
+
+            </div>
+        </div>
+
+        <div id="carousel-navigation">
+            <label for="carousel-button-a" class="carousel-label-a"> <span>1</span> </label>
+            <label for="carousel-button-b" class="carousel-label-b"> <span>2</span> </label>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+    <div data-aos="zoom-in" class="heading my-5">Projects<span>A showcase of some my key projects and impactful
+            work</span>
+    </div>
+    <div class="container-new">
+        <div data-aos="fade-right" class="card-new point" (click)="projectLink('stag')">
+            <div class="bar-new">
+                <div class="emptybar-new"></div>
+                <div class="filledbar-new"></div>
+            </div>
+            <img src="assets/images/stag.webp" alt="">
+        </div>
+        <div data-aos="fade-up" class="card-new point" (click)="projectLink('speedyssey')">
+            <div class="bar-new">
+                <div class="emptybar-new"></div>
+                <div class="filledbar-new"></div>
+            </div>
+            <h3 class="title-new">Speedyssey</h3>
+            <img src="assets/images/speedyssey.png" alt="">
+        </div>
+        <div data-aos="fade-down" class="card-new point" (click)="projectLink('mak')">
+            <div class="bar-new">
+                <div class="emptybar-new"></div>
+                <div class="filledbar-new"></div>
+            </div>
+            <img src="assets/images/mak.png" alt="">
+        </div>
+        <div data-aos="fade-right" class="card-new point" (click)="projectLink('nettree')">
+            <div class="bar-new">
+                <div class="emptybar-new"></div>
+                <div class="filledbar-new"></div>
+            </div>
+            <img class="mt-4 image_border" src="assets/images/nettree.png" width="90%" alt="">
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="mainSkillsDiv">
+        <div style="padding-top: 65px !important;" data-aos="zoom-in" class="heading">Skills<span>Key Skills that
+                drive my success</span>
+        </div>
+        <div class="secDiv">
+            <div class="drag-container">
+                <div class="skills-container">
+                    <div class="box" #box *ngFor="let image of images; let i = index">
+                        <img class="CImg" [src]="image" alt="carousel image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="background">
+        <div class="container" data-aos="flip-up">
+            <div class="screen">
+                <div class="screen-header">
+                    <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                    </div>
+                    <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                    </div>
+                </div>
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title" (click)="sendEmail()">
+                            <span class="point">HIRE</span>
+                            <span class="point">ME</span>
+                        </div>
+                        <div class="app-contact point" (click)="dialPhoneNumber();">HIRE ME : +44 79 095 537 21
+                        </div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" readonly placeholder="Ankit Negi" value="Ankit Negi">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control point" (click)="sendEmail()" readonly
+                                    placeholder="2000ankitnegi@gmail.com" value="2000ankitnegi@gmail.com">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control point" readonly (click)="dialPhoneNumber();"
+                                    placeholder="+44 7909553721" value="+44 7909553721">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
